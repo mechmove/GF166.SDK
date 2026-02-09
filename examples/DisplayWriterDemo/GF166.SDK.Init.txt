@@ -1,0 +1,8 @@
+09F3;vendor ID for goflight gf 166a
+0050;product ID
+Go Flight 166a Radio Control;name to display
+DISPL,INOP;caption if display frequencies = false
+true;display frequencies (true or false)
+50;Update delay in milliseconds
+1;1 = Real GoFlight displays, 2 = fake
+2;Radio Control Panel 1 = Left, 2 = Right (assuming at least 2 radios in the cockpit)
