@@ -26,8 +26,8 @@ public sealed class ConnectionInfo
 		Desc = StripOutComment(contents[2]);
 
 		string Captions = StripOutComment(contents[3]);
-		CAPTION_ACTIVE = RtnCSVEntry(Captions, 5);
-		CAPTION_STANDBY = RtnCSVEntry(Captions, 6);
+		CAPTION_ACTIVE = RtnCSVEntry(Captions, 0);
+		CAPTION_STANDBY = RtnCSVEntry(Captions, 1);
 
 		DisplayNumbers = Convert.ToBoolean(StripOutComment(contents[4]));
 		Delay_ms = Convert.ToInt16(StripOutComment(contents[5]));
