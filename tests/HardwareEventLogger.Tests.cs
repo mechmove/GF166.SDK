@@ -25,13 +25,11 @@ internal static class HardwareEventLoggerTests
 
 		services.AddSingleton<GF166ProtocolHandler>();
 		services.AddSingleton<GF166Device>();
-		services.AddSingleton<HardwareState>();
 
 		var provider = services.BuildServiceProvider();
 
 		var protocol = provider.GetRequiredService<GF166ProtocolHandler>();
 		var device = provider.GetRequiredService<GF166Device>();
-		var HardwareState = provider.GetRequiredService<HardwareState>();
 
 		protocol.ReportReceived += report =>
 		{
